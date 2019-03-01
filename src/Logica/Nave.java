@@ -1,9 +1,12 @@
 package Logica;
 
+import Graficos.Fondo;
+import Graficos.Ventana;
+
 import javax.swing.*;
 import java.awt.*;
-
 import static Logica.Juego.f1;
+import static Logica.Juego.n1;
 
 public class Nave{
     private static String nave;

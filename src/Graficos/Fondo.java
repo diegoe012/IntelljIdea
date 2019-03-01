@@ -70,7 +70,7 @@ public class Fondo extends JPanel{
 
         g.drawImage( fondo, 0, 0, getWidth(), getHeight(), this);
 
-        g.drawImage(Alien.getImagenAlien(),  Alien.getX(),Alien.getY(),Alien.getTamaño(),Alien.getTamaño(),this);
+        g.drawImage(Alien.getImagenAlien(),  Alien.getX(),Alien.getY(),100,100,this);
         g.drawImage(Nave.getImagenNave(),  Nave.getX(),Nave.getY(),Nave.getTamaño(),Nave.getTamaño(),this);
 
         g.drawImage(Bala.getImagenBala(),Bala.getX(),Bala.getY(),Bala.getTamañox(),Bala.getTamañoy(),this);

@@ -2,6 +2,7 @@ package Logica;
 
 import Graficos.Fondo;
 import Graficos.Menu;
+import Graficos.Ventana;
 
 
 public class Juego {

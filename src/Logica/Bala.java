@@ -24,7 +24,7 @@ public class Bala implements Runnable{
         y = Nave.getY()-11;
         tamañoy =  20;
         tamañox = 5;
-        bala = "../Recursos/Bala/laserRed01.png";
+        bala = "../Recursos/Bala/laserGreen11.png";
         ImageIcon imgBala = new ImageIcon(this.getClass().getResource(bala));
         ImagenBala =imgBala.getImage();
         h1 = new Thread(this);
@@ -72,10 +72,4 @@ public class Bala implements Runnable{
             yield();
         }
     }
-
-   /* public void draw( ){
-        g.drawImage(ImagenBala,x,y,tamañox,tamañoy,null);
-        f1.setOpaque(false);
-        f1.paint(g);
-    }*/
 }
