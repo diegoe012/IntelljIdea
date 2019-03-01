@@ -16,7 +16,7 @@ public class Alien {
     public Alien(){
         x = 25;
         y = 50;
-        tamaño = 80;
+        tamaño = 50;
         alien = "../Recursos/spriteAlien/F5S4.png";
         ImageIcon imgAlien = new ImageIcon(this.getClass().getResource(alien));
         ImagenAlien = imgAlien.getImage();
