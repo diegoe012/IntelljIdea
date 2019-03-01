@@ -11,7 +11,6 @@ public class Juego {
     public static int numberMaxScore = 3000;
     public static int leve =0;
 
-    //public static Ventana v1 = new Ventana();
     public static Nave n1 = new Nave();
     public static Life l1 = new Life();
     public static Fondo f1 = new Fondo();

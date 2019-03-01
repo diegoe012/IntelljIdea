@@ -5,7 +5,7 @@ import Logica.Nave;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-import static Logica.Juego.n1;
+import static Logica.Juego.*;
 
 public class DriverTeclado implements KeyListener{
 
@@ -32,6 +32,8 @@ public class DriverTeclado implements KeyListener{
         }
         if(e.getKeyCode() == 38 || e.getKeyCode() == 32 ){
                 n1.disparar();
+                leve=leve+1;
+                f1.repaint();
         }
     }
 
