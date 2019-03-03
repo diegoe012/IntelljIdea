@@ -41,14 +41,14 @@ public class Alien extends AlienAbstarct{
 
         g.drawImage(Alien.getImagenAlien(),  Alien.getX(),Alien.getY(),Alien.getTamaño(),Alien.getTamaño(), (ImageObserver) this);
         Graphics2D g2d = (Graphics2D) g;
-        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
-                RenderingHints.VALUE_ANTIALIAS_ON);
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         this.paint(g2d);
         super.paint(g);
 
     }
     public void mover() throws InterruptedException{
         // movement
+
         if (x + xa < 0)
             xa = 1;
         if (x + xa > 400)
@@ -60,6 +60,8 @@ public class Alien extends AlienAbstarct{
         x = x + xa;
         y = y + ya;
     }
+
+
     public static boolean colision()
     {
         if(Bala.getX()==Alien.getX() && Bala.getY()==Alien.getY())
@@ -71,6 +73,8 @@ public class Alien extends AlienAbstarct{
         {
             muerto=false;
         }
+
+
         if(Nave.getBounds().intersects(Alien.getBounds()))
         {
             numero = numero -1;

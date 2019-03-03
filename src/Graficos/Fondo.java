@@ -85,7 +85,7 @@ public class Fondo extends JPanel{
         }
 
         if(Life.getNumero() == 2){
-            g.drawImage(Life.getImageLife(),Life.getX()+60,Life.getY(),Life.getTamaño(),Life.getTamaño(),this);
+            g.drawImage(Life.getImageLife(),Life.getX()+30,Life.getY(),Life.getTamaño(),Life.getTamaño(),this);
             g.drawImage(Life.getImageLife(),Life.getX(),Life.getY(),Life.getTamaño(),Life.getTamaño(),this);
         }
 
