@@ -15,7 +15,7 @@ public class Juego {
     public static Life l1 = new Life();
     public static Fondo f1 = new Fondo();
 
-    public static Alien a1 = new Alien();
+     public static Alien a1 = new Alien();
 
     public static void main(String []args) throws InterruptedException {
         Menu m1 = new Menu();

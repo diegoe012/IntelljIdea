@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class Life {
     private static int x;
-    private static int numero;
+    public static int numero;
     private static int y;
     private static int tamaño;
     private static String life;

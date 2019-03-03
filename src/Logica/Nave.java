@@ -7,13 +7,17 @@ import javax.swing.*;
 import java.awt.*;
 import static Logica.Juego.f1;
 import static Logica.Juego.n1;
+import static java.awt.image.ImageObserver.HEIGHT;
+import static java.awt.image.ImageObserver.WIDTH;
 
 public class Nave{
     private static String nave;
+    private static final int WIDTH = 70;
+    private static final int HEIGHT = 70;
     private static int dx;
     private static int tamaño;
-    private static int x;
-    private static int y;
+    public static int x;
+    public static int y;
     private static Image ImagenNave;
 
 
@@ -43,15 +47,20 @@ public class Nave{
         return ImagenNave;
     }
 
-    public void mover(int dx){
-            x += dx;
-            System.out.println(x);
-            f1.repaint();
+    public static void mover(int dx){
+        x += dx;
+        System.out.println(x);
+        f1.repaint();
     }
 
     public void disparar() {
         Bala b1 = new Bala();
     }
+    public static Rectangle getBounds()
+    {
+        return new Rectangle(x, y, WIDTH, HEIGHT);
+    }
+
 
 
 }

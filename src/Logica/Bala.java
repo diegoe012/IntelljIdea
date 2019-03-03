@@ -61,7 +61,7 @@ public class Bala implements Runnable{
     }
     @Override
     public void run() {
-        while(y<0){
+        while(y>0){
             mover();
             System.out.println(y);
             try {

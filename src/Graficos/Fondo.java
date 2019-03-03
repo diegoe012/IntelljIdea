@@ -8,6 +8,8 @@ import Logica.Nave;
 import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import static Logica.Juego.*;
 
@@ -84,6 +86,15 @@ public class Fondo extends JPanel{
 
         this.setOpaque(false);
         super.paint(g);
+
+        try {
+            boolean colision;
+            colision = Alien.colision();
+            if(colision!=true)
+                a1.mover();
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Fondo.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
 
